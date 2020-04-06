@@ -1,7 +1,7 @@
-FROM debian:buster-slim
+FROM python:3.6-slim-buster
 
 RUN apt-get update \
-    && apt-get install -y git libprotobuf-dev libprotobuf-c-dev python3.6 python3-pip \
+    && apt-get install -y git libprotobuf-dev libprotobuf-c-dev \
     && rm -rf /var/lib/apt/lists/*
 
 RUN cd /opt \

@@ -40,6 +40,8 @@ Start Postile with:
 
     docker run --network host oslandia/postile postile --help
 
+To be able to access Postile from outside the container do not forget to use the option `--listen 0.0.0.0`.
+
 ## Example of serving postgis layers individually
 
     postile --pguser **** --pgpassword **** --pgdatabase mydb --pghost localhost --listen-port 8080 --cors
